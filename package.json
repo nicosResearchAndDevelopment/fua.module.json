@@ -7,9 +7,9 @@
     "src/*"
   ],
   "dependencies": {
-    "@nrd/fua.core.assert": "^1.0.0",
-    "@nrd/fua.core.is": "^1.0.0",
-    "@nrd/fua.core.objects": "^1.0.0"
+    "@nrd/fua.core.assert": "^1.0.2",
+    "@nrd/fua.core.is": "^1.0.7",
+    "@nrd/fua.core.objects": "^1.0.1"
   },
   "devDependencies": {
     "expect": "26.x",
