@@ -4,9 +4,11 @@ const
     is      = require('@nrd/fua.core.is'),
     objects = require('@nrd/fua.core.objects');
 
+/** @typedef {Array<string>} TokenArray */
+
 /**
  * @param {string} pointerStr
- * @returns {Array<string>}
+ * @returns {TokenArray}
  */
 pointer.parseTokens = function (pointerStr) {
     assert.string(pointerStr, /^(?:\/(?:[\u{00}-\u{2E}\u{30}-\u{7D} \u{7F}-\u{10FFFF}]|~[01])*)*$/u)
@@ -15,7 +17,7 @@ pointer.parseTokens = function (pointerStr) {
 }
 
 /**
- * @param {Array<string>} tokens
+ * @param {TokenArray} tokens
  * @returns {string}
  */
 pointer.stringifyTokens = function (tokens) {

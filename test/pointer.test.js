@@ -44,8 +44,9 @@ describe('fua.module.json/pointer', function () {
     })
 
     test('reject parse pointer if value is malformed', function () {
-        expect(() => pointer.parseTokens('/~/1')).toThrow()
-        expect(() => pointer.parseTokens('/~2')).toThrow()
+        expect(() => pointer.parseTokens('hello/world')).toThrow()
+        expect(() => pointer.parseTokens('/~lorem')).toThrow()
+        expect(() => pointer.parseTokens('/~2ipsum')).toThrow()
     })
 
 });
