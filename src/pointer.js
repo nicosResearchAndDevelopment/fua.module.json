@@ -25,5 +25,5 @@ pointer.stringifyTokens = function (tokens) {
     return '/' + tokens.map(token => token.replace(/~/g, '~0').replace(/\//g, '~1')).join('/')
 }
 
-objects.freeze(pointer)
+objects.lock(pointer)
 module.exports = pointer

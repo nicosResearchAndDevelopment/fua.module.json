@@ -86,5 +86,5 @@ reference.stringifyReference = function (refObj, srcFile) {
     return srcPart + '#' + refPart
 }
 
-objects.freeze(reference)
+objects.lock(reference)
 module.exports = reference

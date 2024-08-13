@@ -42,5 +42,27 @@ json.writeJSON = async function (filePath, data, options) {
     await fs.writeFile(filePath, jsonStr, encoding)
 }
 
-objects.freeze(json)
+/**
+ * @param {string | URL} fileUrl
+ * @param {{
+ *     method?: string,
+ *     headers?: Record<string, string>,
+ *     reviver?: (key: string, value: any) => any
+ * }} [options]
+ * @returns {Promise<any>}
+ */
+json.fetchJSON = async function (fileUrl, options) {
+    assert.string(fileUrl)
+    const method   = options?.method ?? 'GET'
+    const headers  = {
+        'Accept': 'application/json',
+        ...options?.headers
+    }
+    const reviver  = options?.reviver ?? undefined
+    const response = await fetch(fileUrl, {method, headers})
+    const jsonStr  = await response.text()
+    return JSON.parse(jsonStr, reviver)
+}
+
+objects.lock(json)
 module.exports = json
