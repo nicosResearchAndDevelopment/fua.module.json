@@ -1,7 +1,6 @@
 const
     json    = exports,
     assert  = require('@nrd/fua.core.assert'),
-    is      = require('@nrd/fua.core.is'),
     objects = require('@nrd/fua.core.objects'),
     fs      = require('node:fs/promises');
 
@@ -43,7 +42,7 @@ json.writeJSON = async function (filePath, data, options) {
 }
 
 /**
- * @param {string | URL} fileUrl
+ * @param {string} fileUrl
  * @param {{
  *     method?: string,
  *     headers?: Record<string, string>,
