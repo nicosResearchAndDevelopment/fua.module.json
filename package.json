@@ -1,5 +1,5 @@
 {
-  "name": "@nrd/fua.module.json",
+  "name": "@fua/module.json",
   "version": "1.0.0",
   "description": "",
   "main": "src/json.js",
@@ -7,9 +7,9 @@
     "src/*"
   ],
   "dependencies": {
-    "@nrd/fua.core.assert": "^1.0.2",
-    "@nrd/fua.core.is": "^1.0.7",
-    "@nrd/fua.core.objects": "^1.0.1"
+    "@fua/core.assert": "^1.0.2",
+    "@fua/core.is": "^1.0.7",
+    "@fua/core.objects": "^1.0.1"
   },
   "devDependencies": {
     "expect": "26.x",
@@ -25,8 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git02.int.nsc.ag:10022/research/fua/module/json.git"
+    "url": "ssh://git@github.com:nicosResearchAndDevelopment/fua.module.json.git"
   },
-  "author": "spetrac@nicos-ag.com",
-  "license": "UNLICENSED"
+  "author": "Simon Petrac <pfoerdie@gmail.com>",
+  "license": "MIT"
 }

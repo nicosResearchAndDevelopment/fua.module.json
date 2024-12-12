@@ -1,8 +1,8 @@
 const
     pointer = exports,
-    assert  = require('@nrd/fua.core.assert'),
-    is      = require('@nrd/fua.core.is'),
-    objects = require('@nrd/fua.core.objects');
+    assert  = require('@fua/core.assert'),
+    is      = require('@fua/core.is'),
+    objects = require('@fua/core.objects');
 
 /** @typedef {Array<string>} TokenArray */
 

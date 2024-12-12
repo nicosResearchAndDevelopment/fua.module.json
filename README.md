@@ -1,1 +1,1 @@
-# @nrd/fua.module.json
+# @fua/module.json

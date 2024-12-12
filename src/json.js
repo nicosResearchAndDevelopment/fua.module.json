@@ -1,7 +1,7 @@
 const
     json    = exports,
-    assert  = require('@nrd/fua.core.assert'),
-    objects = require('@nrd/fua.core.objects'),
+    assert  = require('@fua/core.assert'),
+    objects = require('@fua/core.objects'),
     fs      = require('node:fs/promises');
 
 /**
